@@ -6,15 +6,10 @@ export const tokenName = "s11g2login";
 
 //import { useHistory } from "react-router-dom";
 
-/*
-  omer@workintech.com.tr
-  123456
-*/
-
 export default function LoginForm() {
   const [formData, setFormData] = useState({
-    email: "",
-    password: "",
+    username: "workintech",
+    password: "wecandoit",
   });
 
   function handleChange(event) {
@@ -52,8 +47,8 @@ export default function LoginForm() {
           USERNAME
           <input
             onChange={handleChange}
-            name="email"
-            value={formData.email}
+            name="username"
+            value={formData.username}
             type="text"
             className=" block p-1 ml-2 border bg-black w-56  text-xl text-white"
           />
