@@ -7,7 +7,7 @@ export default function AddFriend() {
     <div>
       <h1 className="text-xl font-bold p-2"> ADD FRIEND</h1>
       <form className="text-right font-bold">
-        <label className="block mb-2 ">
+        <label className="block mb-2  text-white">
           FRIEND NAME
           <input
             name="name"
@@ -15,7 +15,7 @@ export default function AddFriend() {
             className="p-1 ml-2 borderw-56 text-xl bg-black"
           />
         </label>
-        <label className="block mb-2">
+        <label className="block mb-2  text-white">
           FRIEND EMAIL
           <input
             name="email"
