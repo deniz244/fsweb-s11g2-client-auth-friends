@@ -13,8 +13,8 @@ import axios from "axios";
 
 export default function LoginForm() {
   const [formData, setFormData] = useState({
-    email: "omer@workintech.com.tr",
-    password: "123456",
+    email: "",
+    password: "",
   });
 
   function handleChange(event) {
@@ -46,30 +46,30 @@ export default function LoginForm() {
 
   return (
     <>
-      <h2 className="text-xl font-bold p-2">Giriş Yap</h2>
+      <h1 className="text-xl font-bold p-2"> LOGIN</h1>
       <form className="text-right" onSubmit={handleSubmit}>
         <label className="block mb-2">
-          Kullanıcı adı
+          USERNAME
           <input
             onChange={handleChange}
             name="email"
             value={formData.email}
             type="text"
-            className="p-1 ml-2 border border-zinc-400 w-56 rounded text-sm"
+            className="p-1 ml-2 border border-zinc-400 w-56  text-sm"
           />
         </label>
         <label className="block mb-2">
-          Şifre
+          PASSWORD
           <input
             onChange={handleChange}
             name="password"
             value={formData.password}
             type="password"
-            className="p-1 ml-2 border border-zinc-400 w-56 rounded text-sm"
+            className="p-1 ml-2 border border-zinc-400 w-56  text-sm"
           />
         </label>
-        <button type="submit" className="px-4 py-2 bg-yellow-500 rounded">
-          Giriş yap
+        <button type="submit" className="px-4 py-2 bg-black text-white ">
+          SUBMIT
         </button>
       </form>
     </>
