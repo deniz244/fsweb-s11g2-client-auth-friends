@@ -47,7 +47,7 @@ export default function LoginForm() {
   return (
     <>
       <h1 className="text-xl font-bold p-2"> LOGIN</h1>
-      <form className="text-right" onSubmit={handleSubmit}>
+      <form className="text-right font-bold" onSubmit={handleSubmit}>
         <label className="block mb-2">
           USERNAME
           <input
@@ -55,7 +55,7 @@ export default function LoginForm() {
             name="email"
             value={formData.email}
             type="text"
-            className="p-1 ml-2 border border-zinc-400 w-56  text-sm"
+            className="p-1 ml-2 border border-zinc-400 w-56  text-xl"
           />
         </label>
         <label className="block mb-2">
