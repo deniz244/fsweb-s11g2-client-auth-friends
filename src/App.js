@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <nav className="flex gap-2 justify-center text-lg text-black">
         <h1 className="text-black">FRIENDS DATABASE</h1>
-        <Link to="/login" className="p-2 ">
+        <Link to="/" className="p-2 ">
           LOGIN.
         </Link>
         <Link to="/friends" className="p-2 ">
@@ -26,7 +26,7 @@ function App() {
 
       <div className="max-w-sm mx-auto">
         <Switch>
-          <Route exact path="/login">
+          <Route exact path="/">
             <LoginForm />
           </Route>
           <Route path="/friends">
