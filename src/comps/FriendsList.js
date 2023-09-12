@@ -2,7 +2,12 @@ import axios from "axios";
 
 export default function FriendsList() {
   axios
-    .get("http://localhost:9000/api/friends")
+    .get("http://localhost:9000/api/friends", {
+      headers: {
+        authorization:
+          "ahuBHejkJJiMDhmODZhZi0zaeLTQ4ZfeaseOGZgesai1jZWYgrTA07i73Gebhu98",
+      },
+    })
     .then(function (response) {
       // handle success
       console.log(response);
